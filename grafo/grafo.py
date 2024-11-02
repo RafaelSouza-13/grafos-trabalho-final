@@ -27,25 +27,3 @@ class Grafo:
     def adiciona_aresta(self, u, v, capacidade):
         self.matriz_adjacencia[u][v] = capacidade
 
-    def exibe_matriz(self):
-        fig, ax = plt.subplots()
-        cax = ax.imshow(self.matriz_adjacencia, cmap='Spectral', interpolation='nearest')
-
-        fig.colorbar(cax)
-
-        ax.set_title('Matriz de Adjacências')
-        ax.set_xlabel('Vértices Adjacentes')
-        ax.set_ylabel('Vértices')
-
-        for i in range(self.matriz_adjacencia.shape[0]):
-            for j in range(self.matriz_adjacencia.shape[1]):
-                ax.text(j, i, str(self.matriz_adjacencia[i, j]),
-                        ha='center', va='center',
-                        color='white')
-
-        ax.set_xticks(np.arange(self.matriz_adjacencia.shape[1]))
-        ax.set_yticks(np.arange(self.matriz_adjacencia.shape[0]))
-        ax.set_xticklabels(np.arange(self.matriz_adjacencia.shape[1]))
-        ax.set_yticklabels(np.arange(self.matriz_adjacencia.shape[0]))
-
-        plt.show()
