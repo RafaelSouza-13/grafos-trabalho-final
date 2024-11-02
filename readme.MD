@@ -10,7 +10,7 @@ mas também permite manipular o fluxo residual diretamente, durante a execução
 
 ##  Algoritmo Ford Fulkerson
 Implementação do algoritmo de Ford Fulkerson utilizando o DFS
-- [x] Busca em largura (BFS)
+- [x] Busca em profundidade (DFS)
 - [x] Algoritmo Ford Fulkerson para caminhos mínimos
 
 ## Pré-requisitos
